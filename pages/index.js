@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar";
+import Slideshow from "../components/Slideshow";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <header>
         <NavBar />
+        <Slideshow />
       </header>
       <footer className={styles.footer}>
         <a
