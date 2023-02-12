@@ -3,6 +3,30 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar";
 import Slideshow from "../components/Slideshow";
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { black } from "@mui/material/colors";
+
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    background: {
+      paper: "black",
+    },
+    primary: {
+      main: "#000",
+    },
+    neutral: {
+      main: "#64748B",
+      contrastText: "#fff",
+    },
+  },
+});
+const style = {
+  bgcolor: "background.paper",
+};
 
 export default function Home() {
   return (
@@ -14,6 +38,9 @@ export default function Home() {
       </Head>
       <header>
         <NavBar />
+        <ThemeProvider theme={theme}>
+          <ResponsiveAppBar sx={style} />
+        </ThemeProvider>
         <Slideshow />
       </header>
       <footer className={styles.footer}>
