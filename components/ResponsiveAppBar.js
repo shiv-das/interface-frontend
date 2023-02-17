@@ -23,6 +23,16 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
+  function changeBackground(e) {
+    e.target.style.background = "white";
+    e.target.style.color = "black";
+  }
+
+  function defaultBackground(e) {
+    e.target.style.background = "black";
+    e.target.style.color = "white";
+  }
+
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -77,6 +87,8 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                onMouseEnter={changeBackground}
+                onMouseLeave={defaultBackground}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
