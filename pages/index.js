@@ -6,6 +6,7 @@ import Slideshow from "../components/Slideshow";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Hod from "../components/Hod";
+import BranchChapter from "../components/BranchChapter";
 
 const theme = createTheme({
   status: {
@@ -42,6 +43,7 @@ export default function Home() {
           <ResponsiveAppBar sx={style} />
         </ThemeProvider>
         <Slideshow />
+        <BranchChapter />
         <Hod />
       </header>
       <footer className={styles.footer}>
