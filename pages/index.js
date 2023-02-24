@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 import Slideshow from "../components/Slideshow";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { black } from "@mui/material/colors";
+import Hod from "../components/Hod";
 
 const theme = createTheme({
   status: {
@@ -42,6 +42,7 @@ export default function Home() {
           <ResponsiveAppBar sx={style} />
         </ThemeProvider>
         <Slideshow />
+        <Hod />
       </header>
       <footer className={styles.footer}>
         <a
