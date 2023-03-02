@@ -50,7 +50,6 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-
               fontWeight: 700,
               letterSpacing: ".1rem",
               color: "inherit",

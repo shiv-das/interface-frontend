@@ -143,6 +143,17 @@
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+@media screen and (max-width: 900px) {
+  .navbarlogo {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 .navbarlogo1 {
   width: 100px;
