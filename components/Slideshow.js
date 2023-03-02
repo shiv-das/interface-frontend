@@ -45,6 +45,8 @@ export default function Slideshow() {
             style={{
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "100% 100%",
+              //width: "100%",
+              //height: "auto",
             }}
           ></div>
         ))}

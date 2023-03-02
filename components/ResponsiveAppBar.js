@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import styles from "../styles/Home.module.css";
 //import { createTheme } from "@mui/material/styles";
 
 const pages = ["About Us", "Contact Us"];
@@ -56,7 +57,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            INTERFACE
+            <img src="/logo.png" className={styles.navbarlogo1} />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -111,7 +112,7 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            INTERFACE
+            <img src="/logo.png" className={styles.navbarlogo} />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

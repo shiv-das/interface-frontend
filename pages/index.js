@@ -42,7 +42,6 @@ export default function Home() {
         <link rel="logo" href="/logo.png" />
       </Head>
       <header>
-        <NavBar />
         <React.StrictMode>
           <StyledEngineProvider injectFirst>
             <ThemeProvider theme={theme}>
