@@ -1,9 +1,13 @@
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar";
 import Slideshow from "../components/Slideshow";
+import { StyledEngineProvider } from "@mui/material/styles";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Hod from "../components/Hod";
 import BranchChapter from "../components/BranchChapter";
@@ -39,9 +43,13 @@ export default function Home() {
       </Head>
       <header>
         <NavBar />
-        <ThemeProvider theme={theme}>
-          <ResponsiveAppBar sx={style} />
-        </ThemeProvider>
+        <React.StrictMode>
+          <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+              <ResponsiveAppBar sx={style} />
+            </ThemeProvider>
+          </StyledEngineProvider>
+        </React.StrictMode>
         <Slideshow />
         <BranchChapter />
         <Hod />
