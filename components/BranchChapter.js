@@ -8,8 +8,8 @@ export default function BranchChapter() {
         <div>
           <ul className={styles.flip3}>
             <li>COMPUTER ENGINEERING DEPARTMENT </li>
-            <li className={styles.marginBC}>BRANCH CHAPTER</li>
-            <li className={styles.marginInterface}>INTERFACE</li>
+            <li>BRANCH CHAPTER</li>
+            <li>INTERFACE</li>
           </ul>
         </div>
       </h4>
