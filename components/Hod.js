@@ -3,8 +3,24 @@ import styles from "../styles/Home.module.css";
 export default function Hod() {
   return (
     <div className={styles.messageContainer}>
+      <div className={styles.compTitle}>
+        <h3>Message from HODs Desk</h3>
+      </div>
       <div className={styles.hodPic}>
-        <img src="/HODpic.png" height={200} width={200} />
+        <img
+          src="/HODpic.png"
+          height={200}
+          width={200}
+          className={styles.hodPicClass}
+        />
+        <br />
+        Dr. Sarang Dhar Samantaray
+        <br />
+        Head
+        <br />
+        Department of Computer Engineering
+        <br />
+        College of Technology
       </div>
       <div className={styles.hodMessage}>
         <p>
@@ -24,7 +40,6 @@ export default function Hod() {
           all the best for all their endeavors .
         </p>
       </div>
-      <div className={styles.hodName}>Dr. Sarang Dhar Samantaray</div>
     </div>
   );
 }
